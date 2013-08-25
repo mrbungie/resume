@@ -1,0 +1,131 @@
+% resume.tex
+%
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+%
+% This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+\documentclass[letterpaper,11pt]{article}
+
+%-----------------------------------------------------------
+%Margin setup
+
+\setlength{\voffset}{0.1in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\paperheight}{11in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\textheight}{11in}
+\setlength{\textheight}{9.5in}
+\setlength{\topmargin}{-0.25in}
+\setlength{\textwidth}{7in}
+\setlength{\topskip}{0in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\evensidemargin}{-0.25in}
+%-----------------------------------------------------------
+\usepackage[utf8]{inputenc}
+%\usepackage{fullpage}
+\usepackage{shading}
+%\textheight=9.0in
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\large \parashade[.9]{sharpcorners}{\textbf{#1 \vphantom{p\^{E}}}}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+
+\begin{document}
+
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+\textbf{\Large Germán Oviedo}  & (+569) 95499523\\
+Osvaldo Silva Castellón 159 Casa 10 &  goviedo@alumnos.uai.cl \\
+Antofagasta, Chile & http://tics.uai.cl/${}_{\textrm{\symbol{126}}}$goviedo/\\
+\end{tabular*}
+\\
+
+\vspace{0.75in}
+
+\large{\textbf{Educación}} \normalsize
+\vspace{0.035in}
+\hrule
+\begin{itemize}
+\item
+	\ressubheading{Universidad Adolfo Ibañez}{Viña del Mar, Chile}{Ingeniería Civil Industrial mención Tecnologías de la Información}{2010 - (en curso)}
+	\begin{itemize}
+		\resitem{Ayudantía en Programación y Taller de eBusiness}
+	\end{itemize}
+
+\item
+	\ressubheading{Hrvatska Skola San Esteban}{Antofagasta, Chile}{Continuación Educación Media}{2007-2008}
+\item
+	\ressubheading{Colegio Universitario Antonio Rendic}{Antofagasta, Chile}{Educación Media}{2005-2006}
+
+\end{itemize}
+
+\vspace{0.4in}
+
+\large{\textbf{Experiencia de Trabajo}} \normalsize
+\hrule
+\begin{itemize}
+\item
+	\ressubheading{Universidad Adolfo Ibañez}{Santiago, Chile}{Administrador de Sistemas y Desarrollador}{Diciembre 2012 - Enero 2013}
+	\begin{itemize}
+		\resitem{Estudiar e implementar Jasig CAS, un protocolo single sign-on, con tal de analizar la potencialidad de centralizar la autenticación de usuarios de variados servicios informáticos de la universidad.}
+		\resitem{Desarrollar e implementar plugins escritos en Perl para Nagios con tal de monitorizar máquinas y servicios varios.}
+	\end{itemize}
+\end{itemize}
+\begin{itemize}
+\item
+        \ressubheading{CloudLab Sonda - UAI}{Viña del Mar, Chile}{Administrador de Sistemas y Desarrollador I+D}{Marzo 2013 - (en curso)}
+        \begin{itemize}
+                \resitem{Investigar y desarrollar proyectos en torno a tecnologías Cloud}
+        \end{itemize}
+\end{itemize}
+
+
+\vspace{0.4in}
+
+\large{\textbf{Proyectos Universitarios}} \normalsize
+\hrule
+\begin{itemize}
+\item
+	\ressubheading{Servidor TICS}{Viña del Mar, Chile}{Facultad de Ingeniería y Ciencias UAI}{Marzo 2013 - (en curso)}
+	\begin{itemize}
+		\resitem{Levantar y mantener un servidor seguro para servir contenidos del alumnado relacionados con los cursos de Tecnologías de Información.}
+	\end{itemize}
+\end{itemize}
+
+\vspace{0.4in}
+
+\newpage
+
+\large{\textbf{Habilidades}} \normalsize
+\vspace{0.035in}
+\hrule
+\begin{description}
+\item[Languajes:]
+C\#, LaTeX, Java, PHP, Perl, Javascript, HTML, CSS, SH y PowerShell.
+\item[Sistemas Operativos:]
+Ambientes Unix-like (Linux, OS X, FreeBSD) y Windows.
+\item[Aplicaciones:]
+Mathematica, Maple, Microsoft Office, Microsoft Project y VMware.
+\item[Bases de Datos:]
+RDBMS; Bases de Datos NoSQL; Servidores de Busqueda;
+\item[Tecnologias y Conceptos:]
+Virtualización; Visualización; Análisis y Diseño OO; Monitorización de equipos y servicios; Análisis de Logs.
+\item[Idiomas:]
+Español nativo e Ingles avanzado.
+\end{description}
+
+
+\end{document}
